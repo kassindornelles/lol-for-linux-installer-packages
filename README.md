@@ -1,5 +1,4 @@
 # lol-for-linux-installer-packages
-PKGBUILD for lol-for-linux-installer
 
 ## Arch Linux/Manjaro and Friends with multilib enabled:
 With the main PKGBUILD file in a folder on arch/manjaro and friends you just need to run "makepkg -si" and it will build and install
