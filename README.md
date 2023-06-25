@@ -1,4 +1,4 @@
-# lol-for-linux-installer-pkgbuild
+# lol-for-linux-installer-packages
 PKGBUILD for lol-for-linux-installer
 
 ## Arch Linux/Manjaro and Friends with multilib enabled:
