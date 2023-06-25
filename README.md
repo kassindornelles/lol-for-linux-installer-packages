@@ -6,3 +6,6 @@ With the main PKGBUILD file in a folder on arch/manjaro and friends you just nee
 
 ## Ubuntu/Pop_OS!/Mint with multiarch enabled:
 Install `makedeb` and run "makedeb -si" inside the ubuntu-makedeb folder to compile and install
+
+## Fedora 38
+Run `rpmbuild -bb lol-for-linux-installer.spec
