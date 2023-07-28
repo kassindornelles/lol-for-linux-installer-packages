@@ -1,5 +1,5 @@
 Name:           lol-for-linux-installer
-Version:        2.5.1
+Version:        2.5.2
 Release:        1%{?dist}
 Summary:        League of Legends installer and manager for Linux
 License:        GPL-3.0
