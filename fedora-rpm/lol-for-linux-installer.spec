@@ -6,21 +6,6 @@ License:        GPL-3.0
 URL:            https://github.com/kassindornelles/lol-for-linux-installer
 Source0:        https://github.com/kassindornelles/lol-for-linux-installer/archive/refs/tags/v.%{version}.tar.gz
 
-BuildRequires:  python3-devel
-BuildRequires:  python3-psutil
-BuildRequires:  python3-PyQt5
-BuildRequires:  python3-cffi
-BuildRequires:  wine
-BuildRequires:  python3-requests
-BuildRequires:  qt5-qtbase-devel
-BuildRequires:  tar
-BuildRequires:  gnutls
-BuildRequires:  openldap-compat
-BuildRequires:  libpng
-BuildRequires:  mesa-libGL-devel
-BuildRequires:  libgphoto2-devel
-BuildRequires:  python3-setuptools
-
 Requires:       python3
 Requires:       python3-psutil
 Requires:       python3-PyQt5
