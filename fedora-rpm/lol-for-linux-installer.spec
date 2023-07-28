@@ -64,7 +64,7 @@ cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 /usr/share/applications/
 
 %changelog
-* Sun Jun 25 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.1-1
+* Fri Jul 28 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.2-1
 - Initial release
 
 
