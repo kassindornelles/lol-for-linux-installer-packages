@@ -1,6 +1,6 @@
 # Maintainer: Kassin Dornelles <kassin.dornelles@gmail.com>
 pkgname=lol-for-linux-installer
-pkgver=2.5.2
+pkgver=2.5.3
 pkgrel=1
 pkgdesc="League of Legends installer and manager for Linux"
 arch=('amd64')
@@ -11,7 +11,7 @@ optdepends=('vkbasalt: Enables additional visual enhancements'
             'gamemode: Improves game performance'
             'mangohud: Provides an overlay with game performance metrics')
 source=("https://github.com/kassindornelles/lol-for-linux-installer/archive/refs/tags/v.$pkgver.tar.gz")
-sha512sums=('da265469e2c49aa8bde50ab39d3d196f1acee63b83f51833939e93760af8472480445340fe9dae9e8d7700faa486098dfcc5cd50316b0c4058f88f3d854fd516')
+sha512sums=('621be1653d0723cbec3c98ba803743b4f0344d4b93e15886d0f256541c5c7b949b2d3a2bdd7ce55e3669a79ec3e16f0249247582f26f5c82555fba4cbc1223a9')
 
 package() {
   cd "$srcdir/lol-for-linux-installer-v.$pkgver/src"
