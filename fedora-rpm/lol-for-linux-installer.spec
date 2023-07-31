@@ -27,11 +27,6 @@ Requires:       libgphoto2
 %{summary}
 
 %prep
-# Download the source archive
-%{__mkdir_p} %{_builddir}/%{name}-%{version}
-cd %{_builddir}/%{name}-%{version}
-wget -q %{SOURCE0}
-
 %autosetup -n lol-for-linux-installer-v.%{version}
 
 %install
@@ -56,7 +51,6 @@ cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 /usr/share/applications/
 
 %changelog
-* Mon Jul 31 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.4-1
+* Fri Jul 30 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.4-1
 - Initial release
-
 
