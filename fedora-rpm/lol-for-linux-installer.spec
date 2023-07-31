@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        League of Legends installer and manager for Linux
 License:        GPL-3.0
 URL:            https://github.com/kassindornelles/lol-for-linux-installer
-Source0:        https://github.com/kassindornelles/lol-for-linux-installer/archive/refs/tags/v.%{version}.tar.gz
+Source0:        https://github.com/kassindornelles/lol-for-linux-installer/archive/v.%{version}.tar.gz
 
 BuildRequires:  wget
 
@@ -27,6 +27,11 @@ Requires:       libgphoto2
 %{summary}
 
 %prep
+# Download the source archive
+%{__mkdir_p} %{_builddir}/%{name}-%{version}
+cd %{_builddir}/%{name}-%{version}
+wget -q %{SOURCE0}
+
 %autosetup -n lol-for-linux-installer-v.%{version}
 
 %install
@@ -51,7 +56,7 @@ cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 /usr/share/applications/
 
 %changelog
-* Fri Jul 31 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.4-1
+* Mon Jul 31 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.4-1
 - Initial release
 
 
