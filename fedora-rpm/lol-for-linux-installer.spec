@@ -14,7 +14,6 @@ Requires:       python3
 Requires:       python3-psutil
 Requires:       python3-PyQt5
 Requires:       python3-cffi
-Requires:       wine
 Requires:       /usr/bin/wine
 Requires:       python3-requests
 Requires:       qt5-qtbase
