@@ -1,3 +1,5 @@
+%define _topdir %(pwd)
+
 Name:           lol-for-linux-installer
 Version:        2.5.4
 Release:        1%{?dist}
