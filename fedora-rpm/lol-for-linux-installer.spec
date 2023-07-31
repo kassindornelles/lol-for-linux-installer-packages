@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        League of Legends installer and manager for Linux
 License:        GPL-3.0
 URL:            https://github.com/kassindornelles/lol-for-linux-installer
-Source0:        https://github.com/kassindornelles/lol-for-linux-installer/archive/v.%{version}/lol-for-linux-installer-%{version}.tar.gz
+Source0:        https://github.com/kassindornelles/lol-for-linux-installer/archive/refs/tags/v.%{version}.tar.gz
 
 BuildRequires:  wget
 
@@ -12,6 +12,7 @@ Requires:       python3
 Requires:       python3-psutil
 Requires:       python3-PyQt5
 Requires:       python3-cffi
+Requires:       wine
 Requires:       /usr/bin/wine
 Requires:       python3-requests
 Requires:       qt5-qtbase
@@ -27,18 +28,12 @@ Requires:       libgphoto2
 %{summary}
 
 %prep
-# Download the source archive
-%{__mkdir_p} %{_builddir}/%{name}-%{version}
-cd %{_builddir}/%{name}-%{version}
-wget -q %{SOURCE0} -O %{name}-%{version}.tar.gz
-
-%autosetup -n lol-for-linux-installer-%{version}
+%autosetup -n lol-for-linux-installer-v.%{version}
 
 %install
 mkdir -p %{buildroot}/usr/bin
 mkdir -p %{buildroot}/usr/share/lol-for-linux-installer
 mkdir -p %{buildroot}/usr/share/applications
-
 install -m755 src/lol-for-linux-installer.py %{buildroot}/usr/bin/lol-for-linux-installer
 install -m644 src/launch-script.py %{buildroot}/usr/share/lol-for-linux-installer/launch-script.py
 install -m644 src/vulkan_layers.py %{buildroot}/usr/share/lol-for-linux-installer/vulkan_layers.py
@@ -56,7 +51,5 @@ cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 /usr/share/applications/
 
 %changelog
-* Fri Jul 30 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.4-1
+* Fri Jul 31 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.4-1
 - Initial release
-
-
