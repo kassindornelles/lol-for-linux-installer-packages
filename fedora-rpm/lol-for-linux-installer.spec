@@ -6,11 +6,13 @@ License:        GPL-3.0
 URL:            https://github.com/kassindornelles/lol-for-linux-installer
 Source0:        https://github.com/kassindornelles/lol-for-linux-installer/archive/refs/tags/v.%{version}.tar.gz
 
+BuildRequires:  wget
+
 Requires:       python3
 Requires:       python3-psutil
 Requires:       python3-PyQt5
 Requires:       python3-cffi
-Requires:       wine
+Requires:       /usr/bin/wine
 Requires:       python3-requests
 Requires:       qt5-qtbase
 Requires:       tar
@@ -49,7 +51,7 @@ cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 /usr/share/applications/
 
 %changelog
-* Fri Jul 30 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.4-1
+* Fri Jul 31 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.4-1
 - Initial release
 
 
