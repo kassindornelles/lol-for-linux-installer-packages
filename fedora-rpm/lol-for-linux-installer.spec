@@ -33,7 +33,7 @@ Requires:       libgphoto2
 
 %install
 mkdir -p %{buildroot}/usr/bin
-mkdir -p %{buildroot}/usr/share/lol-for-linux-installer
+mkdir -p %{buildroot}/usr/share/com.kassindornelles.LolForLinuxInstaller
 mkdir -p %{buildroot}/usr/share/applications
 install -m755 src/com.kassindornelles.LolForLinuxInstaller.py %{buildroot}/usr/bin/com.kassindornelles.LolForLinuxInstaller
 install -m644 src/launch-script.py %{buildroot}/usr/share/lol-for-linux-installer/launch-script.py
