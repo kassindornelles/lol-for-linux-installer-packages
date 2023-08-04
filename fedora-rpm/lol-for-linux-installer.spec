@@ -1,7 +1,7 @@
 %define _topdir %(pwd)
 
 Name:           lol-for-linux-installer
-Version:        2.5.5
+Version:        2.5.6
 Release:        1%{?dist}
 Summary:        League of Legends installer and manager for Linux
 License:        GPL-3.0
@@ -52,5 +52,5 @@ cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 /usr/share/applications/
 
 %changelog
-* Fri Aug 04 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.5-1
+* Fri Aug 04 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.6-1
 - Initial release
