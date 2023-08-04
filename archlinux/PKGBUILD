@@ -15,7 +15,7 @@ sha512sums=('9ff45bfc0c0749dd5b97ad5c2af3c9f3752581f6347138430cf721267aa60096a02
 
 package() {
   cd "$srcdir/lol-for-linux-installer-v.$pkgver/src"
-  install -Dm755 lol-for-linux-installer.py "$pkgdir/usr/bin/lol-for-linux-installer"
+  install -Dm755 com.kassindornelles.LolForLinuxInstaller.py "$pkgdir/usr/bin/com.kassindornelles.LolForLinuxInstaller"
   install -Dm644 launch-script.py "$pkgdir/usr/share/lol-for-linux-installer/launch-script.py"
   install -Dm644 vulkan_layers.py "$pkgdir/usr/share/lol-for-linux-installer/vulkan_layers.py"
   install -Dm644 env_vars.json "$pkgdir/usr/share/lol-for-linux-installer/env_vars.json"

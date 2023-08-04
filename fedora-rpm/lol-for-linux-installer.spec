@@ -35,7 +35,7 @@ Requires:       libgphoto2
 mkdir -p %{buildroot}/usr/bin
 mkdir -p %{buildroot}/usr/share/lol-for-linux-installer
 mkdir -p %{buildroot}/usr/share/applications
-install -m755 src/lol-for-linux-installer.py %{buildroot}/usr/bin/lol-for-linux-installer
+install -m755 src/com.kassindornelles.LolForLinuxInstaller.py %{buildroot}/usr/bin/com.kassindornelles.LolForLinuxInstaller
 install -m644 src/launch-script.py %{buildroot}/usr/share/lol-for-linux-installer/launch-script.py
 install -m644 src/vulkan_layers.py %{buildroot}/usr/share/lol-for-linux-installer/vulkan_layers.py
 install -m644 src/env_vars.json %{buildroot}/usr/share/lol-for-linux-installer/env_vars.json
