@@ -39,7 +39,7 @@ install -m755 src/com.kassindornelles.LolForLinuxInstaller.py %{buildroot}/usr/b
 install -m644 src/launch-script.py %{buildroot}/usr/share/lol-for-linux-installer/launch-script.py
 install -m644 src/vulkan_layers.py %{buildroot}/usr/share/lol-for-linux-installer/vulkan_layers.py
 install -m644 src/env_vars.json %{buildroot}/usr/share/lol-for-linux-installer/env_vars.json
-install -m644 src/lol-for-linux-installer.png %{buildroot}/usr/share/lol-for-linux-installer/lol-for-linux-installer.png
+install -m644 src/lol-for-linux-installer.svg %{buildroot}/usr/share/lol-for-linux-installer/lol-for-linux-installer.svg
 install -m644 src/leagueinstaller_code.py %{buildroot}/usr/share/lol-for-linux-installer/leagueinstaller_code.py
 install -m644 src/com.kassindornelles.LolForLinuxInstaller.desktop %{buildroot}/usr/share/applications/com.kassindornelles.LolForLinuxInstaller.desktop
 cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
