@@ -35,19 +35,19 @@ Requires:       libgphoto2
 mkdir -p %{buildroot}/usr/bin
 mkdir -p %{buildroot}/usr/share/lol-for-linux-installer
 mkdir -p %{buildroot}/usr/share/applications
-install -m755 src/com.kassindornelles.LolForLinuxInstaller.py %{buildroot}/usr/bin/com.kassindornelles.LolForLinuxInstaller
+install -m755 src/com.kassindornelles.lolforlinuxinstaller.py %{buildroot}/usr/bin/com.kassindornelles.lolforlinuxinstaller
 install -m644 src/launch-script.py %{buildroot}/usr/share/lol-for-linux-installer/launch-script.py
 install -m644 src/vulkan_layers.py %{buildroot}/usr/share/lol-for-linux-installer/vulkan_layers.py
 install -m644 src/env_vars.json %{buildroot}/usr/share/lol-for-linux-installer/env_vars.json
 install -m644 src/lol-for-linux-installer.svg %{buildroot}/usr/share/lol-for-linux-installer/lol-for-linux-installer.svg
 install -m644 src/leagueinstaller_code.py %{buildroot}/usr/share/lol-for-linux-installer/leagueinstaller_code.py
-install -m644 src/com.kassindornelles.LolForLinuxInstaller.desktop %{buildroot}/usr/share/applications/com.kassindornelles.LolForLinuxInstaller.desktop
+install -m644 src/com.kassindornelles.lolforlinuxinstaller.desktop %{buildroot}/usr/share/applications/com.kassindornelles.lolforlinuxinstaller.desktop
 cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 
 %files
 %doc README.md
 %license license.md
-/usr/bin/com.kassindornelles.LolForLinuxInstaller
+/usr/bin/com.kassindornelles.lolforlinuxinstaller
 /usr/share/lol-for-linux-installer/
 /usr/share/applications/
 
