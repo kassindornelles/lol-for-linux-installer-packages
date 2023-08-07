@@ -7,4 +7,4 @@ With the main PKGBUILD file in a folder on arch/manjaro and friends you just nee
 Install `makedeb` and run "makedeb -si" inside the ubuntu-makedeb folder to create the deb package and install
 
 ## Fedora 38
-Run `rpmbuild -bb lol-for-linux-installer.spec` and then double click the .rpm file to install
+Run `build.rpm.sh` and then double click the .rpm file to install
