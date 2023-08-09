@@ -47,7 +47,7 @@ cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 %files
 %doc README.md
 %license license.md
-/usr/bin/com.kassindornelles.lolforlinuxinstaller
+/usr/bin/com.kassindornelles.LolForLinuxInstaller
 /usr/share/lol-for-linux-installer/
 /usr/share/applications/
 
