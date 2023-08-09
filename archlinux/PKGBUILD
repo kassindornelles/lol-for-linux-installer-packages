@@ -15,13 +15,13 @@ sha512sums=('d6fb6b2d61ebcd2ec64c74b0c95df938f6fa290652ff8f39f5730668acba990c474
 
 package() {
   cd "$srcdir/lol-for-linux-installer-v.$pkgver/src"
-  install -Dm755 com.kassindornelles.lolforlinuxinstaller.py "$pkgdir/usr/bin/com.kassindornelles.lolforlinuxinstaller"
+  install -Dm755 com.kassindornelles.LolForLinuxInstaller.py "$pkgdir/usr/bin/com.kassindornelles.lolforlinuxinstaller"
   install -Dm644 launch-script.py "$pkgdir/usr/share/lol-for-linux-installer/launch-script.py"
   install -Dm644 vulkan_layers.py "$pkgdir/usr/share/lol-for-linux-installer/vulkan_layers.py"
   install -Dm644 env_vars.json "$pkgdir/usr/share/lol-for-linux-installer/env_vars.json"
   install -Dm644 lol-for-linux-installer.svg "$pkgdir/usr/share/lol-for-linux-installer/lol-for-linux-installer.svg"
   install -Dm644 leagueinstaller_code.py "$pkgdir/usr/share/lol-for-linux-installer/leagueinstaller_code.py"
-  install -Dm644 com.kassindornelles.lolforlinuxinstaller.desktop "$pkgdir/usr/share/applications/com.kassindornelles.lolforlinuxinstaller.desktop"
+  install -Dm644 com.kassindornelles.LolForLinuxInstaller.desktop "$pkgdir/usr/share/applications/com.kassindornelles.LolForLinuxInstaller"
   cp installer.ui "$pkgdir/usr/share/lol-for-linux-installer/installer.ui"
 
   # Display optional dependencies message
