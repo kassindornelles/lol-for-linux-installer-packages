@@ -1,6 +1,6 @@
 # Maintainer: Kassin Dornelles <kassin.dornelles@gmail.com>
 pkgname=lol-for-linux-installer
-pkgver=2.5.6
+pkgver=2.5.7
 pkgrel=1
 pkgdesc="League of Legends installer and manager for Linux"
 arch=('x86_64')
@@ -11,17 +11,17 @@ optdepends=('vkbasalt: Enables additional visual enhancements'
             'gamemode: Improves game performance'
             'mangohud: Provides an overlay with game performance metrics')
 source=("https://github.com/kassindornelles/lol-for-linux-installer/archive/refs/tags/v.$pkgver.tar.gz")
-sha512sums=('d6fb6b2d61ebcd2ec64c74b0c95df938f6fa290652ff8f39f5730668acba990c474c9f1fc65da0c5a1880483bcfd81d180f59d304aa2f84333b850942b38ee44')
+sha512sums=('71f455c5232925e9ea361caa232715a34073111b2c9acf6543e56a3d3dfb4f3dbb06b9a25880febc17753ebc78898c87f9100b38cd9b7e5be86e42eceaf62082')
 
 package() {
   cd "$srcdir/lol-for-linux-installer-v.$pkgver/src"
-  install -Dm755 com.kassindornelles.LolForLinuxInstaller.py "$pkgdir/usr/bin/com.kassindornelles.LolForLinuxInstaller"
+  install -Dm755 lolforlinuxinstaller.py "$pkgdir/usr/bin/lolforlinuxinstaller"
   install -Dm644 launch-script.py "$pkgdir/usr/share/lol-for-linux-installer/launch-script.py"
   install -Dm644 vulkan_layers.py "$pkgdir/usr/share/lol-for-linux-installer/vulkan_layers.py"
   install -Dm644 env_vars.json "$pkgdir/usr/share/lol-for-linux-installer/env_vars.json"
-  install -Dm644 lol-for-linux-installer.svg "$pkgdir/usr/share/lol-for-linux-installer/lol-for-linux-installer.svg"
+  install -Dm644 lolforlinuxinstaller.svg "$pkgdir/usr/share/lol-for-linux-installer/lolforlinuxinstaller.svg"
   install -Dm644 leagueinstaller_code.py "$pkgdir/usr/share/lol-for-linux-installer/leagueinstaller_code.py"
-  install -Dm775 com.kassindornelles.LolForLinuxInstaller.desktop "$pkgdir/usr/share/applications/com.kassindornelles.LolForLinuxInstaller.desktop"
+  install -Dm644 lolforlinuxinstaller.desktop "$pkgdir/usr/share/applications/lolforlinuxinstaller.desktop"
   cp installer.ui "$pkgdir/usr/share/lol-for-linux-installer/installer.ui"
 
   # Display optional dependencies message

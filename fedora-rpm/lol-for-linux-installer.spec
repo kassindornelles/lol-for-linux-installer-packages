@@ -1,7 +1,7 @@
 %define _topdir %(pwd)
 
 Name:           lol-for-linux-installer
-Version:        2.5.6
+Version:        2.5.7
 Release:        1%{?dist}
 Summary:        League of Legends installer and manager for Linux
 License:        GPL-3.0
@@ -33,24 +33,24 @@ Requires:       libgphoto2
 
 %install
 mkdir -p %{buildroot}/usr/bin
-mkdir -p %{buildroot}/usr/share/lol-for-linux-installer
+mkdir -p %{buildroot}/usr/share/lolforlinuxinstaller
 mkdir -p %{buildroot}/usr/share/applications
-install -m755 src/com.kassindornelles.LolForLinuxInstaller.py %{buildroot}/usr/bin/com.kassindornelles.LolForLinuxInstaller
+install -m755 src/lolforlinuxinstaller.py %{buildroot}/usr/bin/lolforlinuxinstaller
 install -m644 src/launch-script.py %{buildroot}/usr/share/lol-for-linux-installer/launch-script.py
 install -m644 src/vulkan_layers.py %{buildroot}/usr/share/lol-for-linux-installer/vulkan_layers.py
 install -m644 src/env_vars.json %{buildroot}/usr/share/lol-for-linux-installer/env_vars.json
-install -m644 src/lol-for-linux-installer.svg %{buildroot}/usr/share/lol-for-linux-installer/lol-for-linux-installer.svg
+install -m644 src/lol-for-linux-installer.svg %{buildroot}/usr/share/lol-for-linux-installer/lolforlinuxinstaller.svg
 install -m644 src/leagueinstaller_code.py %{buildroot}/usr/share/lol-for-linux-installer/leagueinstaller_code.py
-install -m644 src/com.kassindornelles.LolForLinuxInstaller.desktop %{buildroot}/usr/share/applications/com.kassindornelles.LolForLinuxInstaller.desktop
+install -m644 src/lolforlinuxinstaller.desktop %{buildroot}/usr/share/applications/lolforlinuxinstaller.desktop
 cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 
 %files
 %doc README.md
 %license license.md
-/usr/bin/com.kassindornelles.LolForLinuxInstaller
+/usr/bin/lolforlinuxinstaller
 /usr/share/lol-for-linux-installer/
 /usr/share/applications/
 
 %changelog
-* Fri Aug 04 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.6-1
+* Thu Aug 31 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.7-1
 - Initial release
