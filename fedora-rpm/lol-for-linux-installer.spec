@@ -33,13 +33,13 @@ Requires:       libgphoto2
 
 %install
 mkdir -p %{buildroot}/usr/bin
-mkdir -p %{buildroot}/usr/share/lolforlinuxinstaller
+mkdir -p %{buildroot}/usr/share/lol-for-linux-installer
 mkdir -p %{buildroot}/usr/share/applications
 install -m755 src/lolforlinuxinstaller.py %{buildroot}/usr/bin/lolforlinuxinstaller
 install -m644 src/launch-script.py %{buildroot}/usr/share/lol-for-linux-installer/launch-script.py
 install -m644 src/vulkan_layers.py %{buildroot}/usr/share/lol-for-linux-installer/vulkan_layers.py
 install -m644 src/env_vars.json %{buildroot}/usr/share/lol-for-linux-installer/env_vars.json
-install -m644 src/lol-for-linux-installer.svg %{buildroot}/usr/share/lol-for-linux-installer/lolforlinuxinstaller.svg
+install -m644 src/lolforlinuxinstaller.svg %{buildroot}/usr/share/lol-for-linux-installer/lolforlinuxinstaller.svg
 install -m644 src/leagueinstaller_code.py %{buildroot}/usr/share/lol-for-linux-installer/leagueinstaller_code.py
 install -m644 src/lolforlinuxinstaller.desktop %{buildroot}/usr/share/applications/lolforlinuxinstaller.desktop
 cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
