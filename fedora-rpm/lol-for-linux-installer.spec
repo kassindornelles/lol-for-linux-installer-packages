@@ -23,6 +23,7 @@ Requires:       openldap-compat
 Requires:       libpng
 Requires:       mesa-libGL
 Requires:       libgphoto2
+Requires:       wine
 
 # Define the package build process
 %description
