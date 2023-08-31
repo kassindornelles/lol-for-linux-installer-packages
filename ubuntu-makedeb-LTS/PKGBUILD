@@ -1,0 +1,35 @@
+# Maintainer: Kassin Dornelles <kassin.dornelles@gmail.com>
+pkgname=lol-for-linux-installer
+pkgver=2.5.7
+pkgrel=1
+pkgdesc="League of Legends installer and manager for Linux"
+arch=('amd64')
+url="https://github.com/kassindornelles/lol-for-linux-installer"
+license=('GPL-3.0')
+depends=("python3" "python3-psutil" "python3-pyqt5" "python3-cffi" "wine" "python3-requests" "python3-pyqt5.qtwebkit" "tar" "libgnutls30" "libgnutls30:i386" "libldap-2.5-0" "libldap-2.5-0:i386" "libpng16-16" "libpng16-16:i386" "gphoto2" "libpulse0" "libpulse0:i386")
+optdepends=('vkbasalt: Enables additional visual enhancements'
+            'gamemode: Improves game performance'
+            'mangohud: Provides an overlay with game performance metrics')
+source=("https://github.com/kassindornelles/lol-for-linux-installer/archive/refs/tags/v.$pkgver.tar.gz")
+sha512sums=('71f455c5232925e9ea361caa232715a34073111b2c9acf6543e56a3d3dfb4f3dbb06b9a25880febc17753ebc78898c87f9100b38cd9b7e5be86e42eceaf62082')
+
+package() {
+  cd "$srcdir/lol-for-linux-installer-v.$pkgver/src"
+  install -Dm755 lolforlinuxinstaller.py "$pkgdir/usr/bin/lolforlinuxinstaller"
+  install -Dm644 launch-script.py "$pkgdir/usr/share/lol-for-linux-installer/launch-script.py"
+  install -Dm644 vulkan_layers.py "$pkgdir/usr/share/lol-for-linux-installer/vulkan_layers.py"
+  install -Dm644 env_vars.json "$pkgdir/usr/share/lol-for-linux-installer/env_vars.json"
+  install -Dm644 lolforlinuxinstaller.svg "$pkgdir/usr/share/lol-for-linux-installer/lolforlinuxinstaller.svg"
+  install -Dm644 leagueinstaller_code.py "$pkgdir/usr/share/lol-for-linux-installer/leagueinstaller_code.py"
+  install -Dm644 lolforlinuxinstaller.desktop "$pkgdir/usr/share/applications/lolforlinuxinstaller.desktop"
+  cp installer.ui "$pkgdir/usr/share/lol-for-linux-installer/installer.ui"
+
+  # Display optional dependencies message
+  if [[ ${#optdepends[@]} -gt 0 ]]; then
+    echo "Optional dependencies:"
+    for optdep in "${optdepends[@]}"; do
+      echo "  $optdep"
+    done
+    echo
+  fi
+}
