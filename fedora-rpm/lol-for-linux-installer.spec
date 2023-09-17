@@ -1,7 +1,7 @@
 %define _topdir %(pwd)
 
 Name:           lol-for-linux-installer
-Version:        2.5.7
+Version:        2.5.8
 Release:        1%{?dist}
 Summary:        League of Legends installer and manager for Linux
 License:        GPL-3.0
@@ -13,6 +13,7 @@ BuildRequires:  wget
 Requires:       python3
 Requires:       python3-psutil
 Requires:       python3-PyQt5
+Requires:       python3-pip
 Requires:       python3-cffi
 Requires:       /usr/bin/wine
 Requires:       python3-requests
@@ -24,6 +25,7 @@ Requires:       libpng
 Requires:       mesa-libGL
 Requires:       libgphoto2
 Requires:       wine
+
 
 # Define the package build process
 %description
@@ -53,5 +55,5 @@ cp src/installer.ui %{buildroot}/usr/share/lol-for-linux-installer/installer.ui
 /usr/share/applications/
 
 %changelog
-* Thu Aug 31 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.7-1
+* Sun Sep 17 2023 Kassin Dornelles <kassin.dornelles@gmail.com> - 2.5.8-1
 - Initial release

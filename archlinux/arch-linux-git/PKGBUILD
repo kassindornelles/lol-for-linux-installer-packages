@@ -6,7 +6,7 @@ pkgdesc="League of Legends installer and manager for Linux"
 arch=('x86_64')
 url="https://github.com/kassindornelles/lol-for-linux-installer"
 license=('GPL-3.0')
-depends=('python' 'python-psutil' 'python-pyqt5' 'python-cffi' 'wine' 'python-requests' 'qt5-base' 'tar' 'lib32-gnutls' 'gnutls' 'lib32-libldap' 'libldap' 'libpng' 'lib32-libpng' 'mesa' 'lib32-mesa' 'libgphoto2' 'libpulse' 'lib32-libpulse')
+depends=('python' 'python-psutil' 'python-pip' 'python-pyqt5' 'python-cffi' 'wine' 'python-requests' 'qt5-base' 'tar' 'lib32-gnutls' 'gnutls' 'lib32-libldap' 'libldap' 'libpng' 'lib32-libpng' 'mesa' 'lib32-mesa' 'libgphoto2' 'libpulse' 'lib32-libpulse')
 optdepends=('vkbasalt: Enables additional visual enhancements'
             'gamemode: Improves game performance'
             'mangohud: Provides an overlay with game performance metrics')
