@@ -1,10 +1,12 @@
 # lol-for-linux-installer-packages
 
 ## Arch Linux/Manjaro and Friends with multilib enabled:
-With the main PKGBUILD file in a folder on arch/manjaro and friends you just need to run "makepkg -si" and it will create the package and install
+Run "makepkg -si" in the PKGBUILD file folder and it will create the package and install it.
 
 ## Ubuntu/Pop_OS!/Mint with multiarch enabled:
-Install `makedeb` and run "makedeb -si" inside the ubuntu-makedeb folder to create the deb package and install
+Have `dpkg` installed if on Arch Linux
+
+Run `createdeb.sh` to create a .deb file.
 
 ## Fedora 38
-Run `build.rpm.sh` and then double click the .rpm file to install
+Have RPM-Tools installed and then run `build.rpm.sh` and then double click the .rpm file to install.
