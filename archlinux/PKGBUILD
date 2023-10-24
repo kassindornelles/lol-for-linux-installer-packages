@@ -11,7 +11,7 @@ optdepends=('vkbasalt: Enables additional visual enhancements'
             'gamemode: Improves game performance'
             'mangohud: Provides an overlay with game performance metrics')
 source=("https://github.com/kassindornelles/lol-for-linux-installer/archive/refs/tags/v.$pkgver.tar.gz")
-sha512sums=('034f72cb7ccdd6956ce793ac259e53fc794d371bb210e0748037650d379203e2f20de8003f09f429b7c737b005440f116707988dc2a123372194c926a67e7b58')
+sha512sums=('04a9a18deb3bdcbd3708fd4e15690a89625b542be72d604ffe9d5e3774315a745f5acc648e1a3188669b10474eb898745d5de5010af7a9fa018732140d03e346')
 
 package() {
   cd "$srcdir/lol-for-linux-installer-v.$pkgver/src"
