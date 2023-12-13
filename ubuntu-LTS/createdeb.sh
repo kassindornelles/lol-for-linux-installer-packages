@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PKG_NAME="lol-for-linux-installer"
-PKG_VER="2.6.3"
+PKG_VER="2.6.4"
 PKG_REL="1"
 
 mkdir -p temp-directory/DEBIAN
