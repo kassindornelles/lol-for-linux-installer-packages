@@ -1,5 +1,5 @@
 Package: lol-for-linux-installer
-Version: 2.6.4-1
+Version: 2.6.5-1
 Description: League of Legends installer and manager for Linux
 Architecture: amd64
 Maintainer: Kassin Dornelles <kassin.dornelles@gmail.com>
