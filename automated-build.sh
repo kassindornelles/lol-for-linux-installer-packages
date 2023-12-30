@@ -11,6 +11,9 @@ cd ../fedora-rpm
 echo "BUILDING FOR UBUNTU LTS"
 cd ../ubuntu-LTS
 ./createdeb.sh
+echo "BUILDING FOR UBUNTU 23.10"
+cd ../ubuntu-23-10
+./createdeb.sh
 
 cd ..
 echo "MOVING FILES TO PACKAGES FOLDER"

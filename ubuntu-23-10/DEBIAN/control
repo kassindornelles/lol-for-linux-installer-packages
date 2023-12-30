@@ -1,0 +1,9 @@
+Package: lol-for-linux-installer
+Version: 2.6.5-1
+Description: League of Legends installer and manager for Linux
+Architecture: amd64
+Maintainer: Kassin Dornelles <kassin.dornelles@gmail.com>
+Depends: python3, python3-psutil, python3-pip, python3-pyqt5, python3-cffi, wine, python3-requests, python3-pyqt5.qtwebkit, tar, libgnutls30, libgnutls30:i386, libldap-dev, libldap-dev:i386, libpng16-16, libpng16-16:i386, gphoto2, libpulse0, libpulse0:i386
+Suggests: vkbasalt, gamemode, mangohud
+License: GPL-3.0
+
